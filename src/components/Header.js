@@ -6,7 +6,7 @@ const Header = () => (
     <div className="flex flex-row justify-between p-6">
       <div className="flex flex-row items-center">
         <img src={planet} alt="Logo" width={75} height={75} />
-        <p className="text-3xl px-4">Space Travellers' Hub</p>
+        <p className="text-3xl px-4">Space Travellers&apos; Hub</p>
       </div>
       <div className="flex flex-row items-center">
         <p className="px-2 text-base">Rockets</p>
