@@ -170,11 +170,17 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Adbi**
 
 - GitHub: [Abdi Bekele](https://github.com/Lul-Abdifan)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
 - e-mail: [tasanbannu@gmail.com](mailto:tasanbannu@gmail.com)
+
+👤 **Abel**
+
+- GitHub: [@abel-tefera](https://github.com/abel-tefera)
+- Twitter: [@abelteferabelay](https://twitter.com/abelteferabelay)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/abel-tefera-b1b625153)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
