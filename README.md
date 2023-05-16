@@ -170,7 +170,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Adbi**
+👤 **Abdi**
 
 - GitHub: [Abdi Bekele](https://github.com/Lul-Abdifan)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
