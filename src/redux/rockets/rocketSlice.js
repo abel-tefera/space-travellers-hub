@@ -32,10 +32,10 @@ export const rocketSlice = createSlice({
         const rocketsData = action.payload;
         const selectedRocket = rocketsData.map((rocket) => ({
           id: rocket.id,
-          name: rocket.rocket_name,
+          name: rocket.name,
 
           description: rocket.description,
-          type: rocket.rocket_type,
+          type: rocket.type,
           flickr_images: rocket.flickr_images[0],
         }));
         state.rockets = selectedRocket;
