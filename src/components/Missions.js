@@ -5,6 +5,8 @@ import {
   fetchMissions,
   getMissionsError,
   getMissionsStatus,
+  joinMission,
+  leaveMission,
   selectAllMissions,
 } from '../redux/missions/missionsSlice';
 
@@ -72,8 +74,8 @@ const Missions = () => {
                           <div
                             className={
                               status
-                                ? 'capitalize bg-cyan-500 text-white p-1 rounded cursor-pointer w-fit'
-                                : 'bg-gray-500 uppercase text-white p-1 rounded cursor-pointer w-fit'
+                                ? 'capitalize bg-cyan-500 text-white p-1 rounded w-fit'
+                                : 'bg-gray-500 uppercase text-white p-1 rounded w-fit'
                             }
                             href="#"
                           >
@@ -81,7 +83,13 @@ const Missions = () => {
                           </div>
                         </td>
                         <td className="text-sm font-medium ">
-                          <div
+                          <button
+                            type="button"
+                            onClick={
+                              status
+                                ? () => dispatch(leaveMission(mission_id))
+                                : () => dispatch(joinMission(mission_id))
+                            }
                             className={
                               status
                                 ? 'text-red-500 outline-red-500  outline p-2 cursor-pointer w-fit'
@@ -90,7 +98,7 @@ const Missions = () => {
                             href="#"
                           >
                             {status ? 'Leave Mission' : 'Join Mission'}
-                          </div>
+                          </button>
                         </td>
                       </tr>
                     ),
