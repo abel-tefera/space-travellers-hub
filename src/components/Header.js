@@ -10,7 +10,7 @@ const Header = () => (
           <img src={planet} alt="Logo" width={75} height={75} />
           <p className="text-3xl px-4">Space Travellers&apos; Hub</p>
         </div>
-        <div className="flex flex-row items-center">
+        <div className="md:flex flex-row items-center hidden">
           <NavLink
             to="/"
             className={({ isActive, isPending }) => (isPending ? '' : isActive ? 'underline text-blue-500' : '')}
