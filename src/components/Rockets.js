@@ -7,7 +7,7 @@ const Rockets = () => {
   const { rockets } = useSelector((state) => state.rocket);
   useEffect(() => {
     dispatch(fetchRocket());
-  });
+  }, [dispatch]);
 
   return (
     <div>
