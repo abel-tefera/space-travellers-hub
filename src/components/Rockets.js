@@ -11,7 +11,7 @@ const Rockets = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="m-8">
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
