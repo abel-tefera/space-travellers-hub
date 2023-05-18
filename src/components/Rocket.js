@@ -25,7 +25,7 @@ const Rocket = ({
           <div className="mt-3 ">
             {reserved && (
               <div>
-                <Badge className="inline-block p-1 mr-3 bg-blue-500 text-white text-xs rounded-md">
+                <Badge className="">
                   Reserved
                 </Badge>
                 {description}
