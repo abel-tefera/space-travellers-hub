@@ -52,7 +52,6 @@ export const rocketSlice = createSlice({
           description: rocket.description,
           type: rocket.type,
           flickr_images: rocket.flickr_images[0],
-
         }));
         state.rockets = selectedRocket;
         state.isLoading = false;
@@ -65,4 +64,3 @@ export const rocketSlice = createSlice({
 });
 export const { reserveRocket, cancelReserve } = rocketSlice.actions;
 export default rocketSlice.reducer;
-
