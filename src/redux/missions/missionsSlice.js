@@ -61,7 +61,6 @@ export const selectAllMissions = (state) => state.missions.missionsList;
 export const getMissionsStatus = (state) => state.missions.status;
 export const getMissionsError = (state) => state.missions.error;
 
-export const { joinMission } = missionsSlice.actions;
-export const { leaveMission } = missionsSlice.actions;
+export const { joinMission, leaveMission } = missionsSlice.actions;
 
 export default missionsSlice.reducer;

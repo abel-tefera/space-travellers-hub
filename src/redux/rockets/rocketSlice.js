@@ -15,10 +15,17 @@ export const fetchRocket = createAsyncThunk(
       const data = await response.data;
       return data;
     } catch (error) {
+      if (error.response) {
+        // API response error
+        const errorMessage = error.response.data.error;
+        return thunkAPI.rejectWithValue(errorMessage);
+      }
+      // developer error message
       return thunkAPI.rejectWithValue('Failed to fetch rockets data');
     }
   },
 );
+
 export const rocketSlice = createSlice({
   name: 'rocket',
   initialState,
