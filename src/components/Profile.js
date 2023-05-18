@@ -1,16 +1,27 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectAllMyMissions } from '../redux/missions/missionsSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Profile = () => {
-  const MissionData = useSelector(selectAllMyMissions);
+  const rockets = useSelector((state) => state.rocket.rockets);
 
   return (
-    <div className="container flex flex-row">
-      <div className="flex flex-col">
-        {MissionData.map(({ mission_name }) => (
-          <div key={mission_name} className="p-6">{mission_name}</div>
-        ))}
+    <div className="flex">
+      <div className="w-1/2">
+        <h1 className="px-12 ">My Missions</h1>
+      </div>
+      <div className="w-1/2">
+        <h1 className="">My Rockets</h1>
+
+        <div>
+          <ul>
+            {rockets
+              .filter((rocket) => rocket.reserved)
+              .map((rocket) => (
+                <li className=" py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10" key={rocket.id}>{rocket.name}</li>
+
+              ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
