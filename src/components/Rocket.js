@@ -1,20 +1,18 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Badge from "react-bootstrap/Badge";
 
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { reserveRocket, cancelReserve } from '../redux/rockets/rocketSlice';
+import React from "react";
+import { useDispatch } from "react-redux";
+import { reserveRocket, cancelReserve } from "../redux/rockets/rocketSlice";
 
-const Rocket = ({
-  id, name, description, img, type, reserved,
-}) => {
+const Rocket = ({ id, name, description, img, type, reserved }) => {
   const dispatch = useDispatch();
 
   return (
     <div className="flex m-8">
       <div className="w-72">
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={`${img}`} alt={name} />
         </Card>
       </div>
@@ -25,9 +23,6 @@ const Rocket = ({
           <div className="mt-3 ">
             {reserved && (
               <div>
-                <Badge className="inline-block p-1 mr-3 bg-blue-500 text-white text-xs rounded-md">
-                  Reserved
-                </Badge>
                 {description}
 
                 <Button
@@ -39,6 +34,17 @@ const Rocket = ({
               </div>
             )}
 
+            {!reserved && (
+              <div>
+                <div>{description}</div>
+                <Button
+                  className="p-2 mt-3 rounded-md bg-blue-500 text-white"
+                  onClick={() => dispatch(reserveRocket(id))}
+                >
+                  Reserve Rocket
+                </Button>
+              </div>
+            )}
           </div>
         </Card.Body>
       </div>
