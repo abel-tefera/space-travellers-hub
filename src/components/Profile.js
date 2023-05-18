@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectAllMissions } from '../redux/missions/missionsSlice';
 
@@ -16,7 +16,13 @@ const Profile = () => {
           {missionData
             .filter(({ status }) => status)
             .map(({ mission_name }) => (
-              <div key={mission_name} className="p-6">{mission_name}</div>
+              <div
+                key={mission_name}
+                style={{ width: '90%' }}
+                className="mx-12 py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10"
+              >
+                {mission_name}
+              </div>
             ))}
         </div>
       </div>
@@ -32,7 +38,7 @@ const Profile = () => {
               .map((rocket) => (
                 <li
                   style={{ width: '90%' }}
-                  className=" py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10"
+                  className="mx-12 py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10"
                   key={rocket.id}
                 >
                   {rocket.name}
