@@ -4,7 +4,6 @@ import { MISSIONS_URL } from '../constants';
 
 const initialState = {
   missionsList: [],
-  myMissions: [],
   status: 'idle',
   error: null,
 };
@@ -21,9 +20,7 @@ export const missionsSlice = createSlice({
     joinMission: (state, action) => {
       const newState = state.missionsList.map((mission) => {
         if (mission.mission_id === action.payload) {
-          const newMission = { ...mission, status: true };
-          state.myMissions.push(newMission);
-          return newMission;
+          return { ...mission, status: true };
         }
         return { ...mission };
       });
@@ -32,9 +29,6 @@ export const missionsSlice = createSlice({
     leaveMission: (state, action) => {
       const newState = state.missionsList.map((mission) => {
         if (mission.mission_id === action.payload) {
-          state.myMissions = state.myMissions.filter(
-            (mission) => mission.mission_id !== action.payload,
-          );
           return { ...mission, status: false };
         }
         return { ...mission };
@@ -64,7 +58,6 @@ export const missionsSlice = createSlice({
 });
 
 export const selectAllMissions = (state) => state.missions.missionsList;
-export const selectAllMyMissions = (state) => state.missions.myMissions;
 export const getMissionsStatus = (state) => state.missions.status;
 export const getMissionsError = (state) => state.missions.error;
 
