@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+
 import { selectAllMissions } from '../redux/missions/missionsSlice';
 
 const Profile = () => {
@@ -46,6 +47,7 @@ const Profile = () => {
               ))}
           </ul>
         </div>
+
       </div>
     </div>
   );
