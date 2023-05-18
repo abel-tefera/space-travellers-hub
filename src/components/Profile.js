@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectAllMissions } from '../redux/missions/missionsSlice.js';
+import { selectAllMissions } from '../redux/missions/missionsSlice';
 
 const Profile = () => {
   const missionData = useSelector(selectAllMissions);
@@ -11,7 +11,7 @@ const Profile = () => {
         {missionData
           .filter(({ status }) => status)
           .map(({ mission_name }) => (
-            <div className="p-6">{mission_name}</div>
+            <div key={mission_name} className="p-6">{mission_name}</div>
           ))}
       </div>
     </div>
