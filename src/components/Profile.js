@@ -7,17 +7,17 @@ const Profile = () => {
   return (
     <div className="flex">
       <div className="w-1/2">
-        <h1 className="px-12 ">My Missions</h1>
+        <h1 className="px-12 py-4 text-3xl text-black text-opacity-80">My Missions</h1>
       </div>
       <div className="w-1/2">
-        <h1 className="">My Rockets</h1>
+        <h1 className="px-12 py-4 text-3xl text-black text-opacity-80">My Rockets</h1>
 
         <div>
           <ul>
             {rockets
               .filter((rocket) => rocket.reserved)
               .map((rocket) => (
-                <li className=" py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10" key={rocket.id}>{rocket.name}</li>
+                <li style={{ width: '90%' }} className=" py-6 px-5 text-black text-opacity-70 border border-black border-opacity-10" key={rocket.id}>{rocket.name}</li>
 
               ))}
           </ul>
