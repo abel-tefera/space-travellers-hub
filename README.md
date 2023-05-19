@@ -7,12 +7,12 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Space-Hub\] ](#-Space-Hub-)
+- [📖 [Space-Hub] ](#-Space-Hub-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-    - [**Space-Hub**](#live-demo)
+    - [Space-Hub](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -29,9 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space-Hub] <a name="about-project"></a>
-
-**[Space-Hub](coming soon)**Coming Soon
+# 📖 Space-Hub <a name="about-project"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,10 +38,9 @@
 <details>
   <summary>Client</summary>
   <ul>
-   
-    <li>Tailwind</li>
-    <li>REACT</li>
+    <li>React JS</li>
     <li>Redux</li>
+    <li>Tailwind</li>
   </ul>
 </details>
 
@@ -51,17 +48,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Linter checks]**
-- **[JSX]**
+- **Redux Toolkit**
+- **JSX**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-### **[Space-Hub](Coming Soon)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
