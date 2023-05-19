@@ -7,12 +7,10 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 [Space-Hub] ](#-Space-Hub-)
+- [📖 Space Travellers' Hub ](#-Space-Travellers-Hub-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-    - [Space-Hub](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -29,7 +27,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space-Hub <a name="about-project"></a>
+# 📖 Space Travellers' Hub <a name="about-project"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,7 +48,6 @@
 
 - **Redux Toolkit**
 - **JSX**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,6 +146,7 @@ Run "npx eslint . --fix to fix linters"
 You can deploy this project using:
 
 - github pages
+
 ```sh
 - npm run deploy
 ```
@@ -171,11 +169,9 @@ You can deploy this project using:
 - Twitter: [@abelteferabelay](https://twitter.com/abelteferabelay)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/abel-tefera-b1b625153)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,12 +201,10 @@ I would like to use this medium to appreciate Microverse that bringing me The be
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
