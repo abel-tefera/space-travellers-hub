@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import MissionData from "../data/sample";
 import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchMissions,
